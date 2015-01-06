@@ -1,0 +1,43 @@
+.project_icon {
+    height: 180px;
+    width: 300px;
+}
+
+img.course_facil_img1 {
+    height: 180px !important;
+}
+
+img.course_facil_img2 {
+    height: 180px !important;
+}
+
+.frame {
+    border: 3px solid white;
+}
+
+.my_photo {
+    height: 136px;
+}
+.crop {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.lazyOwl {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    margin: auto;
+    /*position: absolute;*/
+    top: -100%;
+    right: -100%;
+    bottom: -100%;
+    left: -100%;
+}
+
+
+#main-content .form-style .alert {
+    display: block;
+    color: green;
+}

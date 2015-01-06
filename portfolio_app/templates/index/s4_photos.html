@@ -1,0 +1,121 @@
+{% load static %}
+
+<article id="featured" class="section-wrapper clearfix" data-custom-background-img="{% static "img/bg/bg_meetup_js.jpg" %}">
+  <div class="content-wrapper clearfix">
+    <div class="col-sm-11 pull-right">
+
+        <h1 class="section-title">Photos</h1>
+
+        <!-- feature columns -->
+        <section class="feature-columns row clearfix">
+
+          <!-- feature 1 -->
+          <article class="feature-col col-md-4">
+            <a href="" onclick="populate_and_open_modal(event, 'modal-content-6');" class="thumbnail linked">
+              <div class="image-container">
+                <img data-img-src="{% static "img/photos/group1/hero_city1.jpg" %}" class="lazy item-thumbnail" alt="Lorem Ipsum">
+              </div>
+              <div class="caption">
+                <h5>Competitions</h5>
+                <p>Shots taken in the hackathons and games.</p>
+              </div><!-- .caption -->
+            </a><!-- .thumbnail -->
+
+            <div class="content-to-populate-in-modal" id="modal-content-6">
+              <h1>Competitions</h1>
+              <p>The memories in the cometitions.<br/></p>
+
+              <!-- image slider inside popup -->
+              <div id="unique-id-for-image-slider" class="owl-carousel popup-image-gallery">
+                <!-- slide -->
+                <div>
+                  <!-- caption is optional. To remove it, remove the <h6> below -->
+                  <h6 class="caption">Hero City Hackathon - on stage</h6>
+                  <img class="lazyOwl" data-src="{%  static "img/photos/group1/hero_city1.jpg" %}">
+                </div>
+                <!-- slide -->
+                <div>
+                  <h6 class="caption">Hero City Hackathon - prize</h6>
+                  <img class="lazyOwl" data-src="{%  static "img/photos/group1/hero_city2.jpg" %}">
+                </div>
+                <!-- slide -->
+                <div>
+                  <h6 class="caption">Yeti's Competition - team</h6>
+                  <img class="lazyOwl" data-src="{%  static "img/photos/group1/yeti_competition.jpg" %}">
+                </div>
+                <!-- slide -->
+                <div>
+                  <h6 class="caption">Yo Hackathon - let's yo!</h6>
+                  <img class="lazyOwl" data-src="{%  static "img/photos/group1/yo_hack.jpg" %}">
+                </div>
+              </div>
+            </div><!-- #modal-content-6 -->
+          </article>
+
+          <!-- feature 2 -->
+          <article class="feature-col col-md-4">
+            <a href="" onclick="populate_and_open_modal(event, 'modal-content-8', '', 'full-size');" class="thumbnail linked">
+              <div class="image-container">
+                <img data-img-src="{% static "img/photos/group2/2014.11.20_After Demo1.jpg" %}" class="lazy item-thumbnail" alt="Lorem Ipsum">
+              </div>
+              <div class="caption">
+                <h5>Professional Life</h5>
+                <p>Life in coding. Activities and events photos</p>
+              </div><!-- .caption -->
+            </a><!-- .thumbnail -->
+
+            <div class="content-to-populate-in-modal" id="modal-content-8">
+              <h1>Professional related</h1>
+              <p>Memories in the programmer life. Photos in learning and social events.</p>
+
+              <!-- alt image slider inside popup -->
+              <div id="unique-id-for-alt-image-slider" class="owl-carousel popup-alt-image-gallery">
+                <div class="item"><a href="{% static "img/photos/group2/2014.11.20_After Demo1.jpg" %}" data-lightbox="popup-alt-gallery"><div class="my_photo"><div class="crop"><img class="lazyOwl" data-src="{% static "img/photos/group2/2014.11.20_After Demo1.jpg" %}"></div></div></a></div>
+                <div class="item"><a href="{% static "img/photos/group2/2014.11.20_Demo day1.jpg" %}" data-lightbox="popup-alt-gallery"><div class="my_photo"><div class="crop"><img class="lazyOwl" data-src="{% static "img/photos/group2/2014.11.20_Demo day1.jpg" %}"></div></div></a></div>
+                <div class="item"><a href="{% static "img/photos/group2/2014.11.20_Demo day2.jpg" %}" data-lightbox="popup-alt-gallery"><div class="my_photo"><div class="crop"><img class="lazyOwl" data-src="{% static "img/photos/group2/2014.11.20_Demo day2.jpg" %}"></div></div></a></div>
+                <div class="item"><a href="{% static "img/photos/group2/2014.10.3_RocketU friends.jpg" %}" data-lightbox="popup-alt-gallery"><div class="my_photo"><div class="crop"><img class="lazyOwl" data-src="{% static "img/photos/group2/2014.10.3_RocketU friends.jpg" %}"></div></div></a></div>
+                <div class="item"><a href="{% static "img/photos/group2/2014.11.20_job_fair1.jpg" %}" data-lightbox="popup-alt-gallery"><div class="my_photo"><div class="crop"><img class="lazyOwl" data-src="{% static "img/photos/group2/2014.11.20_job_fair1.jpg" %}"></div></div></a></div>
+                <div class="item"><a href="{% static "img/photos/group2/2014.10.30_group_project1.jpg" %}" data-lightbox="popup-alt-gallery"><div class="my_photo"><div class="crop"><img class="lazyOwl" data-src="{% static "img/photos/group2/2014.10.30_group_project1.jpg" %}"></div></div></a></div>
+                <div class="item"><a href="{% static "img/photos/group3/2014.11.20_demo_day.jpg" %}" data-lightbox="popup-alt-gallery"><div class="my_photo"><div class="crop"><img class="lazyOwl" data-src="{% static "img/photos/group3/2014.11.20_demo_day.jpg" %}"></div></div></a></div>
+                <div class="item"><a href="{% static "img/photos/group3/2014.11.21_Next day of final4.jpg" %}" data-lightbox="popup-alt-gallery"><div class="my_photo"><div class="crop"><img class="lazyOwl" data-src="{% static "img/photos/group3/2014.11.21_Next day of final4.jpg" %}"></div></div></a></div>
+              </div>
+            </div><!-- #modal-content-8 -->
+          </article>
+
+          <!-- feature 3 -->
+          <article class="feature-col col-md-4">
+            <a href="" onclick="populate_and_open_modal(event, 'modal-content-9', '', 'full-size');" class="thumbnail linked">
+              <div class="image-container">
+                <img data-img-src="{% static "img/photos/group3/2014.11.9_Hero City Hackathon4.jpg" %}" class="lazy item-thumbnail" alt="Lorem Ipsum">
+              </div>
+              <div class="caption">
+                <h5>Life</h5>
+                <p>Lovely photos with my dear friends.</p>
+              </div><!-- .caption -->
+            </a><!-- .thumbnail -->
+
+            <div class="content-to-populate-in-modal" id="modal-content-9">
+              <h1>Life photos</h1>
+              <p>My life. And my dear friends.</p>
+              <p>(Photos are alto-cropped. Please click them to see the original photo)</p>
+
+              <!-- alt image slider inside popup -->
+              <div id="unique-id-for-alt-image-slider" class="owl-carousel popup-alt-image-gallery">
+                <div class="item"><a href="{% static "img/photos/group3/2014.10.31_halloween.jpg" %}" data-lightbox="popup-alt-gallery"><div class="my_photo"><div class="crop"><img class="lazyOwl" data-src="{% static "img/photos/group3/2014.10.31_halloween.jpg" %}"></div></div></a></div>
+                <div class="item"><a href="{% static "img/photos/group3/2014.10.31_halloween2.jpg" %}" data-lightbox="popup-alt-gallery"><div class="my_photo"><div class="crop"><img class="lazyOwl" data-src="{% static "img/photos/group3/2014.10.31_halloween2.jpg" %}"></div></div></a></div>
+                <div class="item"><a href="{% static "img/photos/group3/2014.10.31_halloween3.jpg" %}" data-lightbox="popup-alt-gallery"><div class="my_photo"><div class="crop"><img class="lazyOwl" data-src="{% static "img/photos/group3/2014.10.31_halloween3.jpg" %}"></div></div></a></div>
+                <div class="item"><a href="{% static "img/photos/group3/2014.11.9_Hero City Hackathon4.jpg" %}" data-lightbox="popup-alt-gallery"><div class="my_photo"><div class="crop"><img class="lazyOwl" data-src="{% static "img/photos/group3/2014.11.9_Hero City Hackathon4.jpg" %}"></div></div></a></div>
+                <div class="item"><a href="{% static "img/photos/group3/2014.11.18_robert.jpg" %}" data-lightbox="popup-alt-gallery"><div class="my_photo"><div class="crop"><img class="lazyOwl" data-src="{% static "img/photos/group3/2014.11.18_robert.jpg" %}"></div></div></a></div>
+                <div class="item"><a href="{% static "img/photos/group2/2014.11.21_after_demo2.jpg" %}" data-lightbox="popup-alt-gallery"><div class="my_photo"><div class="crop"><img class="lazyOwl" data-src="{% static "img/photos/group2/2014.11.21_after_demo2.jpg" %}"></div></div></a></div>
+                <div class="item"><a href="{% static "img/photos/group3/2014.11_happy_hour1.jpg" %}" data-lightbox="popup-alt-gallery"><div class="my_photo"><div class="crop"><img class="lazyOwl" data-src="{% static "img/photos/group3/2014.11_happy_hour1.jpg" %}"></div></div></a></div>
+              </div>
+            </div><!-- #modal-content-8 -->
+          </article>
+
+        </section><!-- end: .feature-columns -->
+
+      <!-- End: Section content to edit -->
+
+    </div><!-- .col-sm-10 -->
+  </div><!-- .content-wrapper -->
+</article><!-- .section-wrapper -->

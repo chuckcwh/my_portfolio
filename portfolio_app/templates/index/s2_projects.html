@@ -1,0 +1,113 @@
+{% load static %}
+
+<article id="carousel" class="section-wrapper clearfix" data-custom-background-img="{% static "img/bg/bg_hero_city_hack.jpg" %}">
+  <div class="content-wrapper clearfix">
+
+      <div id="features-carousel" class="carousel slide with-title-indicators max-height" data-height-percent="70" data-ride="carousel">
+
+        <!-- Indicators - slide navigation -->
+        <ol class="carousel-indicators title-indicators">
+          <li data-target="#features-carousel" data-slide-to="0" class="active">Yomama</li>
+          <li data-target="#features-carousel" data-slide-to="1">BattleFit</li>
+          <li data-target="#features-carousel" data-slide-to="2">Course Facilitation</li>
+          <li data-target="#features-carousel" data-slide-to="3">Let's Party</li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+
+          <div class="item active">
+            <div class="carousel-text-content">
+              <h2 class="title">Yomama</h2>
+              <img src="{% static "img/projects/yomama1.png" %}" class="project_icon" alt="Lorem Ipsum"> <!--class = icon-->
+              <p>Created an communication tool for families; from simple communication all the way to serious emergencies.<br>Participated in Yo's hackathon.</p>
+              <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-2');" class="btn btn-outline-inverse btn-sm">read more</a> <a href="" onclick="populate_and_open_modal(event, 'modal-content-2');" class="btn btn-outline-inverse btn-sm">demo link</a></p>
+
+              <div class="content-to-populate-in-modal" id="modal-content-2">
+                <h1>Yomama</h1>
+                <p><img data-img-src="{% static "img/projects/yomama2.png" %}" class="lazy table-bordered hover_effect pull-left" alt="Lorem Ipsum" style="height:300px !important; border: 3px solid white">
+                <p>A lot of times communicating using technology with moms/elders who are not exactly tech savvy is SUPER HARD! We wanted to create sometime so simple, helpful and beautiful for our moms and elders to use; from simple communication all the way to serious emergencies.</p>
+                <p>The app has 3 main features:</p>
+                <p>Emergency - which is a red button that pings the location to ask for help!</p>
+                <p>I'm Lost - which is a yellow button that pings the location to tell people where they are at.</p>
+                <p>We also added two ten character words that they could add for messaging.(It defaults to "dinner" and "I love you")</p>
+                <p>The app also has a dashboard panel to view past communications with map locations and ability to change the two 10 character words.</p>
+                <p>Technologies: Python, Django, jQuery, PostgreSQL, YO API, AJAX</p>
+              </div><!-- #modal-content-2 -->
+            </div>
+          </div><!-- .item -->
+
+          <div class="item">
+            <div class="carousel-text-content">
+              <h2 class="title">BattleFit</h2>
+              <img src="{% static "img/projects/battlefit2.jpg" %}" class="project_icon" alt="Lorem Ipsum"><br>
+              <p>A social website with competitions and battles for fun fitness motivation, and keep track of everyone’s progress from any wearable<br>1st in Hero City Hackathon, healthcare field.</p>
+              <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-3');" class="btn btn-outline-inverse btn-sm">read more</a> <a href="" onclick="populate_and_open_modal(event, 'modal-content-3');" class="btn btn-outline-inverse btn-sm">demo link</a></p>
+
+              <div class="content-to-populate-in-modal" id="modal-content-3">
+                <h1>BattleFit</h1>
+                <p><img data-img-src="{% static "img/projects/battlefit3.png" %}" class="lazy table_bordered hover_effect pull-left" alt="Lorem Ipsum"></p>
+                <p>Socialize, compete, battle with your friends.</p>
+                <p>Who among you will win?</p>
+                <p>We keep track of everyone's progress from any wearable thanks to <strong>Validic</strong>.</p>
+                <p>Finally, you have a one-stop-shop for fun fitness motivation.</p>
+                <p>Join your group and get fit the fun way!</p>
+                <p>Technologies: Python, Django, PostgreSQL, jQuery, Validic API, AJAX</p>
+              </div><!-- #modal-content-3 -->
+            </div>
+          </div><!-- .item -->
+
+          <div class="item">
+            <div class="carousel-text-content">
+              <h2 class="title">Course Facilitation Tool</h2>
+              <img src="{% static "img/projects/course_facilitation1.png" %}" class="project_icon" alt="Lorem Ipsum">
+              <p>Constructed an interactive interface for greatly improving student-teacher communication.<br>1st place in <i>Yeti</i> competition in RocketU.</p>
+              <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-4');" class="btn btn-outline-inverse btn-sm">read more</a> <a href="" onclick="populate_and_open_modal(event, 'modal-content-4');" class="btn btn-outline-inverse btn-sm">demo link</a></p>
+
+              <div class="content-to-populate-in-modal" id="modal-content-4">
+                <h1>Course Facilitation Tool</h1>
+                <p>This tool is meant to improve real-time teacher-student communication in class with my collaborates.</p>
+                <p><img data-img-src="{% static "img/projects/course_facilitation2.png" %}" class="lazy table-bordered hover_effect pull-left course_facil_img1" alt="Lorem Ipsum">
+                    <br><p>Student operations:</p>
+                    <p>Done - no problem, Help - ask for teacher's immediate attention, and Qestion - raise questions for the current slide.</p>
+                <p><div class="pull-right"><img data-img-src="{% static "img/projects/course_facilitation3.png" %}" class="lazy table-bordered hover_effect course_facil_img2" alt="Lorem Ipsum">
+                    <img data-img-src="{% static "img/projects/course_facilitation4.png" %}" class="lazy table-bordered hover_effect course_facil_img2" alt="Lorem Ipsum"></div></p>
+                <br><p>Teacher operations:</p>
+                <p>Count and handle the class progress by the statistics of students' operations. Respond to individual issues.</p>
+                <br><p>The project helped students raise questions or ask for help by a single click, and helped teachers control the teaching efficacy.</p>
+                <p>Technologies: Python, Django, jQuery, reveal.js, AJAX, AWS</p>
+              </div><!-- #modal-content-4 -->
+            </div>
+          </div><!-- .item -->
+
+          <div class="item">
+            <div class="carousel-text-content">
+              <h2 class="title">Let's Party</h2>
+              <img src="{% static "img/projects/party2.png" %}" class="project_icon" alt="Lorem Ipsum">
+              <p>Fabricated an Angular website for quick share and search party information, creating self APIs. </p>
+              <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-5');" class="btn btn-outline-inverse btn-sm">read more</a> <a href="" onclick="populate_and_open_modal(event, 'modal-content-5');" class="btn btn-outline-inverse btn-sm">demo link</a></p>
+              <div class="content-to-populate-in-modal" id="modal-content-5">
+                <h1>Let's Party</h1>
+                <p><img data-img-src="{% static "img/projects/party1.png" %}" class="lazy table-bordered hover_effect pull-left" alt="Lorem Ipsum">
+                    How do you find something for fun? Life is hard, party is easy.</p>
+                <p>This AngularJS-based project aimed to let users search and share party information.</p>
+                <img data-img-src="{% static "img/projects/party3.png" %}" class="lazy table-bordered hover_effect pull-right" alt="Lorem Ipsum">
+                <p>Functions include:</p>
+                <p><i>You</i>: save your favorite parties, show the parties by your host or favorites.</p>
+                <p><i>Browse</i>: search the parties close to you, search with filters, show the party info that qualified.</p>
+                <p>My final project in RocketU.</p>
+                <p>Technologies: AngularJS, Django Rest Framework, Python, Django, PostgreSQL, Google Map API, AJAX, AWS</p>
+              </div><!-- #modal-content-5 -->
+            </div>
+          </div><!-- .item -->
+
+        </div><!-- .carousel-inner -->
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#features-carousel" data-slide="prev"></a>
+        <a class="right carousel-control" href="#features-carousel" data-slide="next"></a>
+
+      </div><!-- #about-carousel -->
+
+  </div><!-- .content-wrapper -->
+</article><!-- .section-wrapper -->

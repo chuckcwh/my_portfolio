@@ -54,14 +54,6 @@ ROOT_URLCONF = 'portfolio.urls'
 
 WSGI_APPLICATION = 'portfolio.wsgi.application'
 
-EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'content71@gmail.com'
-EMAIL_HOST_PASSWORD = 'b12456789'
-# EMAIL_HOST_PASSWORD = os.environ['EMAIL_PASSWORD']
-EMAIL_PORT = 587
-DEFAULT_FROM_EMAIL = 'content71@gmail.com'
-
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 

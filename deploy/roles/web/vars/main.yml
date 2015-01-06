@@ -1,8 +1,8 @@
 ---
 
-git_repo: https://github.com/chuckcwh/yo_hack.git
+git_repo: https://github.com/chuckcwh/my_portfolio.git
 git_version: master
-project_name: yo_hack
+project_name: portfolio
 virtualenv_path: /home/ubuntu/.virtualenvs/{{ project_name }}
 project_path: "/home/ubuntu/{{ project_name }}"
 requirements_file: "{{ project_path }}/requirements.txt"

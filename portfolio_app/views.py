@@ -24,7 +24,7 @@ def email_send(request):
                 validate_email(data['email'])
                 text_content = 'Name: {} Email: {}. Number: {}. Message: {}'.format(data['name'], data['email'], data['number'], data['message'])
                 html_content = '<h2>Chuck\'s blog got a message!</h2>Name: {}<br>Email: {}<br>Number: {}<br>Message: {}'.format(data['name'], data['email'], data['number'], data['message'])
-                msg = EmailMultiAlternatives("Blog got a new message!", text_content, settings.DEFAULT_FROM_EMAIL, ['chuckcwh@gmail.com'])
+                msg = EmailMultiAlternatives("Blog got a new message!", text_content, settings.DEFAULT_FROM_EMAIL, ['content71@gmail.com'])
                 msg.attach_alternative(html_content, "text/html")
                 msg.send()
                 say = 'Successfully Sent'

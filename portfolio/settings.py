@@ -83,8 +83,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-
-
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'content71@gmail.com'
+EMAIL_HOST_PASSWORD = 'b12456789'
+# EMAIL_HOST_PASSWORD = os.environ['EMAIL_PASSWORD']
+EMAIL_PORT = 587
+DEFAULT_FROM_EMAIL = 'content71@gmail.com'
 
 
 try:

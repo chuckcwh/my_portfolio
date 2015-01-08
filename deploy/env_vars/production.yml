@@ -3,6 +3,6 @@
 db_name: "portfolio"
 db_user: "chuck"
 db_password: "chuck"
-nginx_server_name: www.chuckcwh.com
+nginx_server_name: chuckcwh.com
 django_settings_file: "portfolio.settings"
 proxy_ip: 127.0.0.1:8001

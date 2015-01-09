@@ -1087,7 +1087,7 @@ h6 {
     left:0;
     width: 100%;
     height: 100%;
-    background:url(../images/theme_images/more-plus-icon.png) no-repeat center center;
+    /*background:url(../images/theme_images/more-plus-icon.png) no-repeat center center;*/
     background-color: rgba(0,0,0,0.45);
     opacity: 0;
     filter: alpha(opacity=0);

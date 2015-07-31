@@ -1,0 +1,213 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>恩慈生日大挑戰</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/normalize.min.css' %}">
+{#    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">#}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+</head>
+
+<body>
+      {#slide 1#}
+      <div class="bday_card slide1 show">
+        <div class="bday_img"></div>
+        <div class="img_copy">
+            糟了個糕！似乎是密室呢！<br>
+            該怎麼辦？
+        </div>
+        <div class="btn_zone">
+           <div class="btn wrongOne">左邊的門</div>
+           <div class="btn rightOne">右邊的門</div>
+        </div>
+      </div>
+
+      {#slide 2#}
+      <div class="bday_card slide2_right">
+        <div class="bday_img"></div>
+        <div class="img_copy">
+            遇到蛋黃哥<br>
+            “阿～好懶哦～”
+        </div>
+        <div class="btn_zone">
+           <div class="btn wrongOne">幫他蓋棉被</div>
+           <div class="btn rightOne">把他吃掉</div>
+        </div>
+      </div>
+      <div class="bday_card slide2_wrong">
+        <div class="bday_img"></div>
+        <div class="img_copy">
+            突然出現大怪獸！！！<br>
+            被吃掉了阿阿阿阿阿
+        </div>
+        <div class="btn_zone">
+           <div class="btn restart">重來</div>
+        </div>
+      </div>
+
+      {#slide 3#}
+      <div class="bday_card slide3_right">
+        <div class="bday_img"></div>
+        <div class="img_copy">
+            “阿～雅美蝶～” 不捨得吃，<br>
+            為了報答妳，蛋黃哥送妳一顆榴槤。<br>
+            前方出現敵人！
+        </div>
+        <div class="btn_zone">
+           <div class="btn rightOne">請他吃榴槤</div>
+           <div class="btn wrongOne">用力往他身上丟！</div>
+        </div>
+      </div>
+      <div class="bday_card slide3_wrong">
+        <div class="bday_img"></div>
+        <div class="img_copy">
+            蛋黃哥爆炸啦！！！
+        </div>
+        <div class="btn_zone">
+           <div class="btn restart">重來</div>
+        </div>
+      </div>
+
+      {#slide 4#}
+      <div class="bday_card slide4_right">
+        <div class="bday_img"></div>
+        <div class="img_copy">
+            順利通過了。前方出現一支吸塵器<br>
+            要對它說什麼嗎？
+        </div>
+        <div class="btn_zone">
+           <div class="btn wrongOne">好羨慕你不用工作</div>
+           <div class="btn rightOne">你長得好像我二姐</div>
+        </div>
+      </div>
+      <div class="bday_card slide4_wrong">
+        <div class="bday_img"></div>
+        <div class="img_copy">
+            敵人生氣了！逼妳吞下一斤榴槤！<br>
+            妳 “不要阿～我還沒有飽～～(?)“
+        </div>
+        <div class="btn_zone">
+           <div class="btn restart">重來</div>
+        </div>
+      </div>
+
+      {#slide 5#}
+      <div class="bday_card slide5_right">
+        <div class="bday_img"></div>
+        <div class="img_copy">
+            吸塵器表示害羞！計畫通！<br>
+            它要送妳一個願望
+        </div>
+        <div class="btn_zone">
+           <div class="btn rightOne">一起跳支舞吧！</div>
+           <div class="btn wrongOne">有沒有撿到我的玻璃鞋？</div>
+        </div>
+      </div>
+      <div class="bday_card slide5_wrong">
+        <div class="bday_img"></div>
+        <div class="img_copy">
+            吸塵器生氣了！<br>
+            妳沒地方可以跑了阿阿阿啊
+        </div>
+        <div class="btn_zone">
+           <div class="btn restart">重來</div>
+        </div>
+      </div>
+
+      {#slide 6#}
+      <div class="bday_card slide6_right">
+        <div class="bday_img"></div>
+        <div class="img_copy">
+            終於找到蛋糕了<br>
+            (怎麼那麼遠...)
+        </div>
+        <div class="btn_zone">
+           <div class="btn wrongOne">衝過去！</div>
+           <div class="btn rightOne">小心看看再說</div>
+        </div>
+      </div>
+      <div class="bday_card slide6_wrong">
+        <div class="bday_img"></div>
+        <div class="img_copy">
+            從天而降的巨大玻璃鞋把妳壓死了！<br>
+            “妳掉的是金玻璃還是銀玻璃鞋...“
+        </div>
+        <div class="btn_zone">
+           <div class="btn restart">重來</div>
+        </div>
+      </div>
+
+      {#slide 7#}
+      <div class="bday_card slide7_right">
+        <div class="bday_img"></div>
+        <div class="img_copy">
+            妳謹慎的到達巨大蛋糕山<br>
+        </div>
+        <div class="btn_zone">
+           <div class="btn rightOne">爬上去把蠟燭吹息</div>
+           <div class="btn wrongOne">先試試味道</div>
+        </div>
+      </div>
+      <div class="bday_card slide7_wrong">
+        <div class="bday_img"></div>
+        <div class="img_copy">
+            妳順利躲過所有陷阱 Bravo!<br>
+            但最後踩到香蕉皮摔死了！
+        </div>
+        <div class="btn_zone">
+           <div class="btn restart">重來</div>
+        </div>
+      </div>
+
+      {#slide 8#}
+      <div class="bday_card slide8_right">
+        <div class="bday_img"></div>
+        <div class="img_copy">
+            終於爬到頂端，最後一關了！<br>
+            草莓 "Over my dead body!"
+        </div>
+        <div class="btn_zone">
+           <div class="btn wrongOne">拔出吸塵器戰鬥吧！</div>
+           <div class="btn rightOne">許個願望先！</div>
+        </div>
+      </div>
+      <div class="bday_card slide8_wrong">
+        <div class="bday_img"></div>
+        <div class="img_copy">
+            蛋糕變成巨大怪獸<br>
+            把妳吃掉啦！OH NOOOOO!
+        </div>
+        <div class="btn_zone">
+           <div class="btn restart">重來</div>
+        </div>
+      </div>
+
+      {#slide 9#}
+      <div class="bday_card slide9_right">
+        <div class="bday_img"></div>
+        <div class="img_copy">
+            於是妳享受了美味的蛋糕，<br>
+            可喜可賀！可口可樂！
+        </div>
+        <div class="btn_zone">
+           <div class="btn end">Happy End</div>
+        </div>
+      </div>
+      <div class="bday_card slide9_wrong">
+        <div class="bday_img"></div>
+        <div class="img_copy">
+            吸塵器把蠟燭吹滅啦！！<br>
+            妳在糖漿裡滑倒了，不能呼吸了
+        </div>
+        <div class="btn_zone">
+           <div class="btn restart">重來</div>
+        </div>
+      </div>
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

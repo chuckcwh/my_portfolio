@@ -6,6 +6,10 @@ urlpatterns = patterns('',
     url(r'^$', 'portfolio_app.views.index', name='index'),
     url(r'^blog/', 'portfolio_app.views.blog', name='blog'),
 
+
+    # Games:
+    url(r'^enci_bday', 'enci_bday.views.enci_bday', name='enci_bday'),
+
     #ajax
     url(r'^email_send/', 'portfolio_app.views.email_send', name='email_send'),
 

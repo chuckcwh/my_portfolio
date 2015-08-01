@@ -6,17 +6,19 @@ body {
 }
 
 .bday_container {
-  width: 100%;
+  width: 375px;
+  margin: 0 auto;
 }
 
 .bday_card {
+  width: 375px;
   height: 667px;
   display: none;
   &.show {display: block;}
 
   .bday_img {
     margin: 5% 5% 0 5%;
-    width: 90%;
+    width: 337.5px;
     height: 400px;
     background-color: #d3d3d3;
     background-repeat: no-repeat;
@@ -27,13 +29,14 @@ body {
     position: absolute;
     bottom: 150px;
     font-size: 28px;
-    margin: 0 5%;
-    width: 90%;
+    margin: 0 auto;
+    width: 337.5px;
     text-align: center;
   }
 
   .btn_zone {
-    width: 100%;
+    width: 375px;
+    margin: 0 auto;
     display: table;
     position: absolute;
     bottom: 0;
@@ -41,7 +44,7 @@ body {
       text-align: center;
       vertical-align: middle;
       display: table-cell;
-      width: 35%;
+      width: 131px;
       height: 100px;
       cursor: pointer;
       font-size: 20px;
@@ -49,7 +52,7 @@ body {
       background-size: 100% 100%;
       &:nth-of-type(1) {background-image: url('../img/left_btn.png'); }
       &:nth-of-type(2) {background-image: url('../img/right_btn.png');}
-      &.restart {width: 70%; height: 150px;font-size: 30px; background-image: url('../img/badend_btn.png');}
+      &.restart {width: 262.5px; height: 150px;font-size: 30px; background-image: url('../img/badend_btn.png');}
     }
   }
 }

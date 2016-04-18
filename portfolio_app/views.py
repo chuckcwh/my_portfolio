@@ -14,6 +14,10 @@ def index(request):
 def blog(request):
     return render(request, 'blog.html')
 
+def project(request):
+    return render(request, 'projects/main.html')
+
+
 @csrf_exempt
 def email_send(request):
     say = 'Input Error. Please try again.'

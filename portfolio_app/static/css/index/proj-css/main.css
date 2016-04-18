@@ -1,0 +1,85 @@
+/* CORE TYPOGRAPHY
+----------------------------------------------------------------------------------------*/
+p, a, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, input, textarea, button, body {
+  font-family: 'Exo', sans-serif !important; }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: bold; }
+
+#project_portfolio {
+  background-color: #f2f2f2; }
+
+/* For Common
+----------------------------------------------------------------------------------------*/
+.navbar {
+  min-height: 75px;
+  border-radius: 0px;
+  background: #726E75;
+  box-shadow: 0px 1px 3px 1px rgba(46, 46, 46, 0.3), inset rgba(255, 255, 255, 0.2) 0 1px 1px;
+  border: none;
+  z-index: 9999; }
+  .navbar .navbar_caption {
+    color: #FFFFFF;
+    margin-left: 18%; }
+  .navbar .navbar_photo {
+    border-radius: 50%;
+    border: 5px solid #B6A39E;
+    position: absolute;
+    height: 140px;
+    width: 140px;
+    top: 20px;
+    right: 20%; }
+
+#self_intro {
+  margin: 40px 40% 40px 18%; }
+  #self_intro > h3 {
+    color: #726E75; }
+  #self_intro > p {
+    color: #948B89; }
+    #self_intro > p:last-of-type {
+      color: #B6A39E; }
+
+#projects .project_container {
+  text-align: justify;
+  width: 100%; }
+  #projects .project_container .project_window {
+    width: 33.1%;
+    border-radius: 5px;
+    height: 240px;
+    vertical-align: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    display: inline-block; }
+    #projects .project_container .project_window .shadow {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      transition: 200ms linear;
+      position: relative; }
+      #projects .project_container .project_window .shadow .inner_caption {
+        visibility: hidden;
+        background-color: #FFFFFF;
+        width: 68%;
+        height: 68%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        position: absolute;
+        text-align: center;
+        padding-top: 32px; }
+        #projects .project_container .project_window .shadow .inner_caption > h3 {
+          color: #D0d1ac; }
+        #projects .project_container .project_window .shadow .inner_caption > p {
+          color: #DDE0BD; }
+      #projects .project_container .project_window .shadow:hover {
+        background-color: rgba(1, 1, 1, 0.3); }
+        #projects .project_container .project_window .shadow:hover .inner_caption {
+          visibility: inherit; }
+  #projects .project_container .stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0; }

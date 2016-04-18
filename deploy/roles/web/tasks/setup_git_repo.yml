@@ -5,7 +5,7 @@
        dest={{ project_path }}
        accept_hostkey=yes
        version={{ git_version }}
-  force: yes
+       force=yes
   tags: git
 
 - name: ensure user ownds project

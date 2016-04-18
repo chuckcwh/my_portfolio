@@ -6,15 +6,17 @@ p,a,h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, input, textarea, butto
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight: bold;
 }
-#project_portfolio {
-    background-color: #f2f2f2;
-}
 
+$bg: #f2f2f2;
 $color1: #726E75;
 $color2: #948B89;
 $color3: #B6A39E;
 $color4: #D0d1ac;
 $color5: #DDE0BD;
+
+#project_portfolio {
+    background-color: $bg;
+}
 
 /* For Common
 ----------------------------------------------------------------------------------------*/
@@ -104,6 +106,64 @@ $color5: #DDE0BD;
             display: inline-block;
             font-size: 0;
             line-height: 0;
+        }
+        .modal.fade {
+            .modal-dialog {
+                .modal-content {
+                    background-color: $bg;
+                    text-align: center;
+                    >h2 {
+                        color: $color1;
+                    }
+                    >p {
+                        color: $color4;
+                    }
+                    .close {
+                        font-size: 80px;
+                        margin-right: 17px;
+                        position: absolute;
+                        right: 0;
+                    }
+                    .skill {
+                        color: #FFFFFF;
+                        span {
+                            border-radius: 5px;
+                            margin: 0 5px;
+                            padding: 0 5px;
+                        }
+                        .color1 {background-color: $color1;}
+                        .color2 {background-color: $color2;}
+                        .color3 {background-color: $color3;}
+                        .color4 {background-color: $color4;}
+                        .color5 {background-color: $color5;}
+                    }
+                    .link {
+                        margin: 20px auto 0;
+                        height: 70px;
+                        width: 70px;
+                        border-radius: 50%;
+                        border: 3px solid $color1;
+                        color: $color3;
+                        padding-top: 14px;
+                        transition: 200ms linear;
+                        display: inline-block;
+                        &:hover {
+                            border: 3px solid $color3;
+                        }
+                        >a:hover {
+                            text-decoration: none;
+                        }
+                    }
+                    .image {
+                        width: 100%;
+                        margin-top: 20px;
+                        margin-bottom: 15px;
+                        >img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
         }
     }
 }

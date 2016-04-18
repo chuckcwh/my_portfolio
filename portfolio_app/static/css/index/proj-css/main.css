@@ -83,3 +83,51 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     display: inline-block;
     font-size: 0;
     line-height: 0; }
+  #projects .project_container .modal.fade .modal-dialog .modal-content {
+    background-color: #f2f2f2;
+    text-align: center; }
+    #projects .project_container .modal.fade .modal-dialog .modal-content > h2 {
+      color: #726E75; }
+    #projects .project_container .modal.fade .modal-dialog .modal-content > p {
+      color: #D0d1ac; }
+    #projects .project_container .modal.fade .modal-dialog .modal-content .close {
+      font-size: 80px;
+      margin-right: 17px;
+      position: absolute;
+      right: 0; }
+    #projects .project_container .modal.fade .modal-dialog .modal-content .skill {
+      color: #FFFFFF; }
+      #projects .project_container .modal.fade .modal-dialog .modal-content .skill span {
+        border-radius: 5px;
+        margin: 0 5px;
+        padding: 0 5px; }
+      #projects .project_container .modal.fade .modal-dialog .modal-content .skill .color1 {
+        background-color: #726E75; }
+      #projects .project_container .modal.fade .modal-dialog .modal-content .skill .color2 {
+        background-color: #948B89; }
+      #projects .project_container .modal.fade .modal-dialog .modal-content .skill .color3 {
+        background-color: #B6A39E; }
+      #projects .project_container .modal.fade .modal-dialog .modal-content .skill .color4 {
+        background-color: #D0d1ac; }
+      #projects .project_container .modal.fade .modal-dialog .modal-content .skill .color5 {
+        background-color: #DDE0BD; }
+    #projects .project_container .modal.fade .modal-dialog .modal-content .link {
+      margin: 20px auto 0;
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      border: 3px solid #726E75;
+      color: #B6A39E;
+      padding-top: 14px;
+      transition: 200ms linear;
+      display: inline-block; }
+      #projects .project_container .modal.fade .modal-dialog .modal-content .link:hover {
+        border: 3px solid #B6A39E; }
+      #projects .project_container .modal.fade .modal-dialog .modal-content .link > a:hover {
+        text-decoration: none; }
+    #projects .project_container .modal.fade .modal-dialog .modal-content .image {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 15px; }
+      #projects .project_container .modal.fade .modal-dialog .modal-content .image > img {
+        width: 100%; }
